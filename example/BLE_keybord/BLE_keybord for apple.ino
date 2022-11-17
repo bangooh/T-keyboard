@@ -232,7 +232,14 @@ void loop()
             bleKeyboard.press(KEY_RIGHT_CTRL);
             bleKeyboard.press(KEY_RIGHT_SHIFT);
         }
-
+        //mic, trigger KEY_LEFT_GUI
+        if (keyPressed(0, 6)) {
+            bleKeyboard.press(KEY_LEFT_GUI);
+        }
+        //alt
+        if (keyPressed(0, 4)) {
+            bleKeyboard.press(KEY_LEFT_ALT);
+        }
         bleKeyboard.releaseAll();
 
     } else {
